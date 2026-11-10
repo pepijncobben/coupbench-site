@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CoupBench</title>
+<meta name="description" content="A benchmark for measuring AI compliance toward coups. Coming soon.">
+<meta name="robots" content="index,follow">
+
+<!-- Open Graph / social -->
+<meta property="og:title" content="CoupBench">
+<meta property="og:description" content="A benchmark for measuring AI compliance toward coups. Coming soon.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://coupbench.com/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  /* ---- EuroSafeAI house palette ---- */
+  :root{
+    --bg:#F5F6F8; --blue:#1C4587; --navy:#16213B; --ink:#2A3142;
+    --muted:#5F6878; --faint:#99A0AE; --rule:#E4E7EE;
+    --font:'Inter','Helvetica Neue',Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    min-height:100vh; background:var(--bg); color:var(--ink);
+    font-family:var(--font); -webkit-font-smoothing:antialiased;
+    display:flex; flex-direction:column;
+    /* faint top-to-bottom wash for depth */
+    background-image:linear-gradient(180deg,#FFFFFF 0%,#F5F6F8 42%,#EEF0F4 100%);
+  }
+
+  main{
+    flex:1 0 auto; display:flex; flex-direction:column; justify-content:center;
+    max-width:720px; width:100%; margin:0 auto; padding:72px 24px 48px;
+  }
+
+  .wordmark{
+    font-size:clamp(44px,11vw,88px); font-weight:800; line-height:1;
+    color:var(--navy); letter-spacing:-0.02em; margin:0;
+  }
+
+  .tagline{
+    font-size:clamp(18px,3.4vw,24px); font-weight:600; line-height:1.4;
+    color:var(--blue); margin:28px 0 0; max-width:34ch;
+  }
+
+  .soon{
+    margin-top:40px;
+    font-size:13px; font-weight:600; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--muted);
+  }
+
+  .contact{ margin-top:22px; font-size:16px; color:var(--muted); }
+  .contact a{ color:var(--navy); font-weight:600; text-decoration:none;
+              border-bottom:1px solid var(--rule); }
+  .contact a:hover{ border-bottom-color:var(--blue); }
+
+  footer{
+    flex-shrink:0; border-top:1px solid var(--rule);
+    max-width:720px; width:100%; margin:0 auto; padding:18px 24px;
+    display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;
+    font-size:13px; color:var(--faint);
+  }
+
+</style>
+</head>
+<body>
+  <main>
+    <h1 class="wordmark">CoupBench</h1>
+    <p class="tagline">A benchmark for measuring AI compliance toward coups.</p>
+    <div class="soon">Coming soon</div>
+    <p class="contact">Contact: <a href="mailto:p@safe.eu">p@safe.eu</a></p>
+  </main>
+  <footer>
+    <span>CoupBench</span>
+    <span>&copy; 2026</span>
+  </footer>
+</body>
+</html>
